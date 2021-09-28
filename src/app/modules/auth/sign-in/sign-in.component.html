@@ -38,6 +38,7 @@
                     <mat-label>Email address</mat-label>
                     <input
                         id="email"
+                        data-cy="emailTextbox"
                         matInput
                         [formControlName]="'email'">
                     <mat-error *ngIf="signInForm.get('email').hasError('required')">
